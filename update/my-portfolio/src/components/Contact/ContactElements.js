@@ -2,39 +2,41 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
 height: 700px;
-display: flex;
-flex-direction: relative;
-justify-content: center;
-align-items: center;
-background: #fff;
-`;
-
-export const ContactWrap = styled.div`
-align-items: center;
+max-width: 1000px;
+margin: 100px auto;
+padding: 0 30px;
 display: grid;
 grid-template-columns: 1fr 1fr;
-max-width: 700px;
+align-items: center;
 
-@media screen and (max-width: 500px) {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1000px) {
+    height: 1100px;
+    grid-template-columns: 1fr 
 }
 `;
 
 export const DetailsContainer = styled.ul`
+flex-direction: column;
+flex-content: flex-start;
 align-items: center;
-display: column;
-width: 50%;
-padding: 5%;
 `;
 
 export const Icon = styled.img`
 display: flex;
-width: 500px;
+width: 460px;
 height: auto;
 margin: 20px;
 border-radius: 5px 50px;
-`;
+cursor: pointer;
+transition: 0.3s ease-in-out;
 
+&:hover {
+    transition: 0.3s ease-in-out;
+    width: 440px;
+    border-radius: 50px 5px;
+    height: auto;
+    }
+`;
 
 export const CheckboxWrap = styled.div`
 align-items: left;
@@ -74,28 +76,27 @@ margin: 10px 32px;
 
 export const ContactForm = styled.form`
 z-index: 2;
-display: grid;
+display: relative;
+flex-direction: space-between;
 justify-content: center;
 align-items: center;
-padding: 30px 0 60px 0;
 `;
 
-export const ContactContent = styled.ul`
-display: grid;
-border-radius: 5px 50px;
-justify-content: center;
+export const ContactWrap = styled.div`
+display: flex;
+`;
 
-grid-template-columns: 1fr 1fr;
-align-items: center;
+export const ContactContent = styled.div`
+display: column;
 `;
 
 export const InputText = styled.input`
 color: #e99090;
-font-size: 20px;
+font-size: 18px;
 text-align: left;
 border: 1px solid #b5b5b5;
 justify-content: center;
-padding: 10px;
+padding: 5px;
 display: flex;
 margin: 10px;
 `;
@@ -111,23 +112,12 @@ margin: 5px 10px;
 `;
 export const Dropdown = styled.select`
 color: #e99090;
-font-size: 20px;
+font-size: 18px;
 text-align: left;
 border: 1px solid #b5b5b5;
 justify-content: center;
-padding: 10px;
+padding: 5px;
 display: flex;
-`;
-
-export const ContactNum = styled.input`
-color: #e99090;
-font-size: 20px;
-text-align: left;
-border: 1px solid #b5b5b5;
-justify-content: center;
-padding: 10px;
-display: flex;
-margin: 10px;
 `;
 
 export const MessageBox = styled.textarea`
@@ -139,6 +129,8 @@ justify-content: center;
 padding: 10px;
 margin: 10px;
 display: flex;
+width: 500px;
+height: 150px;
 `;
 
 export const Submit = styled.button`

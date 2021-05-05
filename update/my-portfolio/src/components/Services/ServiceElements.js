@@ -7,13 +7,15 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: #fff;
+padding: 100px 0;
 
+@media screen and (max-width: 1000px) {
+    height: 1000px;
+    padding: 100px 0;
+}
 @media screen and (max-width: 768px) {
     height: 1100px;
-}
-
-@media screen and (max-width: 480px) {
-    height: 1300px;
+    padding: 100px 0;
 }
 `;
 
@@ -30,7 +32,6 @@ align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
     padding: 0 20px;
 }
 `;
@@ -49,6 +50,7 @@ transition: all 0.2s ease-in-out;
 
 &:active {
     background: #8a0303;
+    color: #fff;
   }
 `;
 
@@ -57,6 +59,12 @@ height: 80px;
 width: 80px;
 margin-bottom: 10px;
 margin-top: 10px;
+transition: 0.2s ease-in-out;
+&:hover {
+    transition: 0.2s ease-in-out;
+    height: 70px;
+    width: 70px;
+    }
 `;
 
 export const ServicesH1 = styled.h1`

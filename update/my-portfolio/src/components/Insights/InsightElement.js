@@ -1,19 +1,18 @@
 import styled from 'styled-components'
 
 export const InsightsContainer = styled.div`
-height: 900px;
+height: 820px;
 display: column;
 justify-content: center;
 align-items: center;
 text-align: center;
 background: #fff;
 
-@media screen and (max-width: 768px) {
-    height: 1100px;
+@media screen and (max-width: 1000px) {
+    height: 1050px;
 }   
-
-@media screen and (max-width: 480px) {
-    height: 1500px;
+@media screen and (max-width: 800px) {
+    height: 1150px;
 }
 `;
 
@@ -41,6 +40,14 @@ height: 600px;
 align-items: center;
 justify-content: center;
 box-shadow: 10px 10px 5px grey;
+transition: 0.2s ease-in-out;
+cursor: pointer;
+
+&:hover {
+    transition: 0.2s ease-in-out;
+    height: 610px;
+    width: 52%;
+    }
 `;
 
 export const Column2 = styled.div`
@@ -50,22 +57,36 @@ width: 50%;
 height: 600px;
 align-items: center;
 justify-content: center;
+padding: 0 0 150px 0;
 `;
 
 export const Wrapper = styled.ul`
 display: column;
 margin-bottom: 40px;
-width: 90%;
+width: 100%;
 height: 280px;
 box-shadow: 10px 10px 5px grey;
+transition: 0.2s ease-in-out;
+cursor: pointer;
 
-@media screen and (max-width: 800px) {
-    height: 500px;
-}   
-
-@media screen and (max-width: 460px) {
-    height: 1100px;
+&:hover {
+    transition: 0.2s ease-in-out;
+    height: 290px;
 }
+@media screen and (max-width: 1000px) {
+    height: 400px;
+    &:hover {
+        transition: 0.2s ease-in-out;
+        height: 410px;
+    }
+}   
+@media screen and (max-width: 800px) {
+    height: 450px;
+    &:hover {
+        transition: 0.2s ease-in-out;
+        height: 460px;
+    }
+}   
 `;
 
 
@@ -94,7 +115,15 @@ font-size: 18px;
 font-weight: 700;
 color: #000;
 text-align: left;
-margin: 0 10px 10px 10px;
+padding: 0 10px 10px 10px;
+
+@media screen and (max-width: 768px) {
+    font-size: 16px;
+}   
+
+@media screen and (max-width: 480px) {
+    font-size: 14px;
+}
 `;
 
 export const Description = styled.p`

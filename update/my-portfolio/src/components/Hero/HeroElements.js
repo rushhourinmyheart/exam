@@ -40,8 +40,9 @@ width: 100%;
 text-align: left;
 justify-content: left;
 margin-left: 20px;
-bottom: 200px;
+bottom: 100px;
 `;
+
 //to stack subcontainers
 export const HeroColumn = styled.ul`
 display: grid;
@@ -65,7 +66,7 @@ object-fit: cover;
 
 export const HeroH2 = styled.h2`
 color: #fff;
-font-size: 1.2rem;
+font-size: 1.3rem;
 text-align: left;
 justify-content: left;
 display: flex;
@@ -101,7 +102,6 @@ display: flex;
 `;
 
 export const HeroBtnWrapper = styled.div`
-margin-top: 30px;
 display: flex;
 text-align: left;
 justify-content: left;

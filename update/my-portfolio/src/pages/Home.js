@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Services from '../components/Services'
 import Work from '../components/Work'
 import Insights from '../components/Insights'
+//import Form from '../components/Form/Form'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)

@@ -3,11 +3,17 @@ import style from 'styled-components'
 export const InfoContainer = style.div`
 color: #fff;
 position: relative;
-height: 750px;
+height: 500px;
 margin-bottom: 100px;
 justify-content: center;
+
+@media screen and (max-width: 1100px) {
+    padding: 50px 0;
+    height: 700px;
+}
 @media screen and (max-width: 768px) {
     padding: 50px 0;
+    height: 900px;
 }
 `;
 
@@ -91,6 +97,7 @@ color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 
 @media screen and (max-width: 768px) {
     font-size: 32px;
+    padding: 20px;
 }
 `;
 

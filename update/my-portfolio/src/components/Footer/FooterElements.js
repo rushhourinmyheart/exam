@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export const FooterContainer = styled.footer`
 background: #8a0303;
 justify-content: center;
-color: #fff;
+color: #F34747;
 `;
 
 export const FooterWrap = styled.div`
@@ -23,6 +23,7 @@ width: 100%;
 display: flex;
 flex-direction: space-between;
 justify-content: center;
+padding: 30px 0 0 0;
 `;
 
 
@@ -31,6 +32,13 @@ display: flex;
 flex-direction: space-between;
 padding: 10px 28px;
 justify-content: center;
+
+@media screen and (max-width: 1000px) {
+    padding: 10px 20px;
+}   
+@media screen and (max-width: 768px) {
+    padding: 10px 5px;
+}
 `;
 
 export const FooterLinkItems = styled.img`
@@ -39,7 +47,6 @@ align-items: center;
 text-align: center;
 height: auto;
 width: 100px;
-padding: 10px 0 0 0;
 
 &:hover {
     transform: scale(1.03);
@@ -86,9 +93,16 @@ max-width: 1000px;
 export const SocialMediaWrap = styled.div`
 justify-content: center;
 align-items: center;
-margin: 30px 0;
+padding: 30px 0;
 display: flex;
 grid-gap: 400px;
+
+@media screen and (max-width: 1000px) {
+    grid-gap: 300px;
+}   
+@media screen and (max-width: 768px) {
+    grid-gap: 50px;
+}
 `;
 
 export const SocialLogo = styled(Link)`

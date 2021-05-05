@@ -3,22 +3,28 @@ import {Link} from 'react-scroll'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const WorkContainer = styled.div`
-height: 400px;
+height: 350px;
 display: relative;
 justify-content: center;
 align-items: center;
 text-align: center;
 background: #8a0303;
+padding: 30px 0;
 
+@media screen and (max-width: 800px) {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-content: flex-start;
+}
 @media screen and (max-width: 768px) {
     height: 800px;
     display: flex;
     flex-direction: column;
     flex-content: flex-start;
 }   
-
 @media screen and (max-width: 480px) {
-    height: 1100px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     flex-content: flex-start;
@@ -28,9 +34,8 @@ background: #8a0303;
 export const WorkH1 = styled.h1`
 font-size: 2.5rem;
 color: #fff;
-padding: 50px 0 10px 0;
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
     font-size: 2rem;
 }
 `;
@@ -50,16 +55,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items: center;
 
 @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
     grid-template-columns: 1fr 1fr;
+    padding: 0 0 0 50px;
 }
-
 @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
 }
 `;
 
@@ -82,9 +85,9 @@ transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     border: 1px solid #fff;
     background: none;
+    color: #fff;
 }
 `;
-
 
 export const ArrowForward = styled(MdArrowForward)`
 margin-left: 8px;

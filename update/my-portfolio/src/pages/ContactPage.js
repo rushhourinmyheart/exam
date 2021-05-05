@@ -1,15 +1,17 @@
 import React from 'react'
 import Contact from '../components/Contact';
-import Navbar from '../components/Navbar';
+import {NavBtnLink, NavBtn} from '../components/Navbar/NavbarElements';
 import Hero from '../components/Hero'
 import Footer from '../components/Footer';
 
 const ContactPage = () => {
     return (
         <div>
-            <Navbar />
+            <NavBtn>
+                <NavBtnLink to='/'> Home </NavBtnLink>
+            </NavBtn>
             <Hero />
-            <Contact />
+            <Contact/>
             <Footer />
         </div>
     )

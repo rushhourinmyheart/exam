@@ -1,6 +1,6 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection';
-import Navbar from '../components/Navbar';
+import {NavBtn, NavBtnLink} from '../components/Navbar/NavbarElements';
 import Hero from '../components/Hero'
 import Footer from '../components/Footer';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
@@ -8,7 +8,9 @@ import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/
 const ApproachPage = () => {
     return (
         <div id="approachpage">
-            <Navbar />
+            <NavBtn>
+                <NavBtnLink to='/'> Home </NavBtnLink>
+            </NavBtn>
             <Hero />
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
